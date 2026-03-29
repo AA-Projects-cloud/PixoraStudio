@@ -580,15 +580,15 @@ export default function PixoraStudio() {
 
       {/* NAVBAR */}
       <nav className={`px-nav${scrolled ? " scrolled" : ""}`} id="navbar">
-        <a className="px-nav-logo" href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top:0,behavior:"smooth"}); }} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
+        <button className="px-nav-logo" type="button" onClick={() => { window.scrollTo({top:0,behavior:"smooth"}); }} onMouseEnter={hoverOn} onMouseLeave={hoverOff} style={{background:'none',border:'none',padding:0,cursor:'pointer',textDecoration:'none'}}>
           <div className="px-logo-mark">P</div>
           <span className="px-logo-text">PIXORA <span>STUDIO</span></span>
-        </a>
+        </button>
         <div className="px-nav-links">
           {["services","work","pricing"].map(id => (
-            <a key={id} href={`#${id}`} onClick={(e) => { e.preventDefault(); scrollTo(id); }} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
+            <button key={id} type="button" className="px-nav-link" onClick={() => { scrollTo(id); }} onMouseEnter={hoverOn} onMouseLeave={hoverOff} style={{background:'none',border:'none',padding:0,cursor:'pointer',textDecoration:'none',color:'inherit'}}>
               {id.charAt(0).toUpperCase()+id.slice(1)}
-            </a>
+            </button>
           ))}
           <a href="#contact" className="px-nav-cta" onClick={(e) => { e.preventDefault(); scrollTo("contact"); }} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>Let's Talk →</a>
         </div>
@@ -904,10 +904,10 @@ export default function PixoraStudio() {
       <footer className="px-footer">
         <div className="px-footer-top">
           <div className="px-footer-brand">
-            <a className="px-nav-logo" href="#" onClick={(e)=>{e.preventDefault();window.scrollTo({top:0,behavior:"smooth"})}} style={{marginBottom:0}} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
+            <button className="px-nav-logo" type="button" onClick={()=>{window.scrollTo({top:0,behavior:"smooth"})}} style={{marginBottom:0,background:'none',border:'none',padding:0,cursor:'pointer',textDecoration:'none'}} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
               <div className="px-logo-mark">P</div>
               <span className="px-logo-text">PIXORA <span>STUDIO</span></span>
-            </a>
+            </button>
             <p className="px-footer-tagline">A student-founded digital services agency building the next generation of online brands — one pixel at a time.</p>
           </div>
           {[
