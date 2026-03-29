@@ -547,7 +547,7 @@ export default function PixoraStudio() {
     const message = e.target.formMessage.value;
     const subject = encodeURIComponent(`[Pixora Studio] New Inquiry - ${service}`);
     const body = encodeURIComponent(`Hi Pixora Studio Team,\n\nName: ${name}\nEmail: ${email}\nPhone/WhatsApp: ${phone}\nService Required: ${service}\n\nMessage:\n${message}\n\n---\nSent from Pixora Studio Website`);
-    window.location.href = `mailto:pixorastudio@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:pixorastudio7@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => { setToast(true); setTimeout(() => setToast(false), 5000); }, 500);
   };
 
@@ -843,7 +843,7 @@ export default function PixoraStudio() {
             <p className="px-contact-info-sub px-reveal">Ready to elevate your digital presence? Reach out — we respond within 24 hours and love talking about ideas.</p>
             <div className="px-contact-channels px-reveal">
               {[
-                { cls:"mail", icon:"📧", label:"Email Us", value:"pixorastudio@gmail.com", href:"mailto:pixorastudio@gmail.com", target:undefined },
+                { cls:"mail", icon:"📧", label:"Email Us", value:"pixorastudio7@gmail.com", href:"mailto:pixorastudio7@gmail.com", target:undefined },
                 { cls:"whatsapp", icon:"💬", label:"WhatsApp (Fastest)", value:"+91 98348 23478", href:"https://wa.me/919834823478?text=Hi%20Pixora%20Studio!%20I%27m%20interested%20in%20your%20services.", target:"_blank" },
                 { cls:"instagram", icon:"📸", label:"Instagram", value:"@pixorastudio", href:"https://instagram.com/pixorastudio", target:"_blank" },
                 { cls:"linkedin", icon:"💼", label:"LinkedIn", value:"Pixora Studio", href:"https://linkedin.com/company/pixorastudio", target:"_blank" },
@@ -913,7 +913,7 @@ export default function PixoraStudio() {
           {[
             { heading:"Services", links:[["#services","Website Design"],["#services","Canva Graphics"],["#services","Blog Writing"],["#services","Social Media"]] },
             { heading:"Company", links:[["#work","Portfolio"],["#pricing","Pricing"],["#contact","Contact"]] },
-            { heading:"Connect", links:[["https://instagram.com/pixorastudio","Instagram"],["https://linkedin.com/company/pixorastudio","LinkedIn"],["https://wa.me/919834823478","WhatsApp"],["mailto:pixorastudio@gmail.com","Email"]] },
+            { heading:"Connect", links:[["https://instagram.com/pixorastudio","Instagram"],["https://linkedin.com/company/pixorastudio","LinkedIn"],["https://wa.me/919834823478","WhatsApp"],["mailto:pixorastudio7@gmail.com","Email"]] },
           ].map(g => (
             <div className="px-footer-links-group" key={g.heading}>
               <h4>{g.heading}</h4>
@@ -932,7 +932,7 @@ export default function PixoraStudio() {
               ["https://instagram.com/pixorastudio","📸","Instagram"],
               ["https://www.linkedin.com/in/abhishek-yadav-399b08385?utm_source=share_via&utm_content=profile&utm_medium=member_android","💼","LinkedIn"],
               ["https://wa.me/919834823478","💬","WhatsApp"],
-              ["mailto:pixorastudio@gmail.com","📧","Email"]
+              ["mailto:pixorastudio7@gmail.com","📧","Email"]
             ].map(([href,icon,title]) => (
               <a key={title} className="px-social-btn" href={href} target={href.startsWith("http")?"_blank":undefined} rel={href.startsWith("http")?"noreferrer":undefined} title={title} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>{icon}</a>
             ))}
